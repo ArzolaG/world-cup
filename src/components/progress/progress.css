@@ -1,0 +1,62 @@
+.circle {
+    width: 150px;
+    height: 150px;
+    /* background: cyan; */
+    position: relative;
+}
+
+.outer {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+
+    padding: 14px;
+    /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7); */
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+.inner {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    /* font-weight: 600; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1d495f;
+}
+
+.circle-1,
+.circle-2,
+.circle-3 {
+    fill: none;
+    /* stroke: #4ab5e4; */
+    stroke: url(#GradientColor);
+    stroke-width: 16px;
+}
+.circle-1 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 150;
+}
+.circle-2 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 100;
+}
+.circle-3 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 350;
+}
+
+.circle svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

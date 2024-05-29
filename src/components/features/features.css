@@ -1,0 +1,55 @@
+.ball-container {
+    width: 100%;
+    position: relative;
+    max-width: 600px;
+}
+
+.ball {
+    width: 100%;
+    animation: rotate 50s linear infinite;
+}
+
+.blurb {
+    position: absolute;
+    max-width: 300px;
+}
+.b-1 {
+    top: 0;
+    left: -60%;
+}
+
+.b-2 {
+    right: -70%;
+    top: 0;
+}
+.b-3 {
+    bottom: -10%;
+    right: -62%;
+}
+
+.left-line {
+    position: absolute;
+    top: 28%;
+    left: -40%;
+}
+
+.top-right {
+    position: absolute;
+    right: -18%;
+    top: 1.5%;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
