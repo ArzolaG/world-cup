@@ -1,33 +1,44 @@
+.stats-card {
+    background: radial-gradient(circle, rgba(201, 135, 154, 0.9) 0%, rgba(160, 57, 86, 0.9) 100%);
+    z-index: -1;
+    opacity: 0;
+    padding: 40px;
+    width: 125%;
+    transition: transform 0.2s linear, opacity 0.2s linear;
+    transform-style: preserve-3d;
+}
+
 .card-left:hover .stats-card,
 .card-right:hover .stats-card {
-    left: 100%;
     z-index: 1;
     opacity: 1;
+    transform: translateX(80%);
+    transform-style: preserve-3d;
 }
 .player,
 .name-banner {
-    transition: 0.3s all ease;
+    transition: transform 0.2s linear, opacity 0.2s linear;
 }
 .card-left:hover .player,
 .card-right:hover .player {
     z-index: 99;
     transform: translateY(-5%) scale(1.1);
+    transform-style: preserve-3d;
 }
+
 .card-left:hover .name-banner,
 .card-right:hover .name-banner {
-    z-index: -1;
-}
-.stats-card {
-    /* background: rgba(255, 255, 255, 0.9); */
-    /* background: rgba(201, 135, 154, 0.9); */
-    background: radial-gradient(circle, rgba(201, 135, 154, 0.9) 0%, rgba(160, 57, 86, 0.9) 100%);
-    z-index: -1;
+    /* z-index: -1; */
     opacity: 0;
-    transition: 0.3s all ease;
-    /* transition-property: opacity, right, left; */
-    padding: 40px;
-    width: 125%;
 }
+
+.card-right:hover .stats-card {
+    transform: translateX(-100%);
+    transform-style: preserve-3d;
+    z-index: 1;
+    opacity: 1;
+}
+
 .stats-card.argentina {
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(175, 204, 226, 1) 100%);
 }
@@ -39,12 +50,6 @@
 }
 .stats-card.france {
     background: radial-gradient(circle, rgba(221, 120, 129, 1) 0%, rgba(0, 35, 149, 1) 100%);
-}
-
-.card-right:hover .stats-card {
-    left: -125%;
-    z-index: 1;
-    opacity: 1;
 }
 
 .white-container {
