@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <div className="flex justify-between p-5 bg-qatar text-white rounded-full w-full max-w-screen-2xl shadow-xl fixed z-20">
+        <div className="flex justify-between py-4 px-8 bg-qatar text-white rounded-full w-full max-w-screen-2xl shadow-xl fixed z-20 xl:max-w-screen-xl">
             <div>Qatar</div>
             <nav>
                 <ul className="flex gap-10">

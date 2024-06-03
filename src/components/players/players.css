@@ -3,11 +3,18 @@
     z-index: -1;
     opacity: 0;
     padding: 40px;
-    width: 125%;
-    transition: transform 0.2s linear, opacity 0.2s linear;
+    width: 123.5%;
+    transition: transform 0.2s ease, opacity 0.2s ease;
     transform-style: preserve-3d;
 }
+.card-left,
+.card-right {
+    max-height: 770px;
+}
 
+.player {
+    object-fit: contain;
+}
 .card-left:hover .stats-card,
 .card-right:hover .stats-card {
     z-index: 1;
@@ -17,7 +24,7 @@
 }
 .player,
 .name-banner {
-    transition: transform 0.2s linear, opacity 0.2s linear;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 .card-left:hover .player,
 .card-right:hover .player {
@@ -43,7 +50,7 @@
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(175, 204, 226, 1) 100%);
 }
 .stats-card.portugal {
-    background: linear-gradient(90deg, rgba(35, 158, 70, 1) 0%, rgba(183, 1, 28, 1) 100%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(213, 48, 67) 100%);
 }
 .stats-card.brazil {
     background: radial-gradient(circle, rgba(254, 224, 0, 1) 0%, rgba(0, 156, 55, 1) 100%);
@@ -58,4 +65,14 @@
 
 .white-container img {
     min-width: 0;
+}
+
+@media screen and (max-width: 1536px) {
+    .card-left,
+    .card-right {
+        max-height: 620px;
+    }
+    .stats-card {
+        padding: 20px;
+    }
 }

@@ -34,14 +34,41 @@
     color: #1d495f;
 }
 
-.circle-1,
-.circle-2,
-.circle-3 {
+.argentina .circle-1,
+.argentina .circle-2,
+.argentina .circle-3 {
     fill: none;
     /* stroke: #4ab5e4; */
     stroke: url(#GradientColor);
     stroke-width: 16px;
+    color: #ff4e4e;
 }
+
+.portugal .circle-1,
+.portugal .circle-2,
+.portugal .circle-3 {
+    fill: none;
+    /* stroke: #4ab5e4; */
+    stroke: url(#GradientColorPortugal);
+    stroke-width: 16px;
+}
+.brazil .circle-1,
+.brazil .circle-2,
+.brazil .circle-3 {
+    fill: none;
+    /* stroke: #4ab5e4; */
+    stroke: url(#GradientColorBrazil);
+    stroke-width: 16px;
+}
+.france .circle-1,
+.france .circle-2,
+.france .circle-3 {
+    fill: none;
+    /* stroke: #4ab5e4; */
+    stroke: url(#GradientColorFrance);
+    stroke-width: 16px;
+}
+
 .circle-1 {
     stroke-dasharray: 472;
     stroke-dashoffset: 150;

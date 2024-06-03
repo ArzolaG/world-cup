@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const Info = () => {
     return (
-        <div className="flex max-w-screen-2xl mx-auto my-24 gap-20 items-center" id="info">
+        <div className="flex max-w-screen-2xl mx-auto my-24 gap-20 items-center xl:max-w-screen-xl" id="info">
             <div className="w-full">
                 <img className="w-full shadow-2xl rounded-lg" src="/src/assets/stadium.jpg" alt="Stadium" />
             </div>

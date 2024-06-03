@@ -5,9 +5,9 @@ import "./header.css";
 
 const Header = () => {
     return (
-        <div id="header" className="header-container p-10 flex flex-col items-center">
+        <div id="header" className="header-container p-6 flex flex-col items-center">
             <Navbar />
-            <div className="hero max-w-screen-2xl w-full px-5 py-60 flex flex-col gap-10 items-start">
+            <div className="hero max-w-screen-2xl w-full px-5 py-60 flex flex-col gap-10 items-start xl:max-w-screen-xl">
                 <h1 className=" text-5xl text-white">
                     FIFA World Cup
                     <br />
