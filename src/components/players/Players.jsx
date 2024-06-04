@@ -161,7 +161,7 @@ const Players = () => {
                     </div>
                     <div className="w-full" style={{ backgroundImage: "url(/src/assets/qatar-bg.jpg)", backgroundSize: "cover" }}>
                         <img
-                            className="pt-8 drop-shadow-2xl w-full h-full object-cover player"
+                            className="pt-8 drop-shadow-2xl w-full h-full object-contain player"
                             src="/src/assets/cristiano.png"
                             alt="Cristiano"
                         />
@@ -302,7 +302,11 @@ const Players = () => {
                         </div>
                     </div>
                     <div className="w-full" style={{ backgroundImage: "url(/src/assets/qatar-bg.jpg)", backgroundSize: "cover" }}>
-                        <img className="pt-8 drop-shadow-2xl w-full h-full object-cover player" src="/src/assets/neymar.png" alt="Neymar" />
+                        <img
+                            className="pt-8 drop-shadow-2xl w-full h-full object-contain player"
+                            src="/src/assets/neymar.png"
+                            alt="Neymar"
+                        />
                         <div className="relative">
                             <div
                                 className="absolute bottom-0 left-0 w-full p-10 text-white uppercase flex flex-col name-banner"
@@ -440,7 +444,11 @@ const Players = () => {
                         </div>
                     </div>
                     <div className="w-full" style={{ backgroundImage: "url(/src/assets/qatar-bg.jpg)", backgroundSize: "cover" }}>
-                        <img className="pt-8 drop-shadow-2xl w-full h-full object-cover player" src="/src/assets/mbappe.png" alt="Mbappe" />
+                        <img
+                            className="pt-8 drop-shadow-2xl w-full h-full object-contain player"
+                            src="/src/assets/mbappe.png"
+                            alt="Mbappe"
+                        />
                         <div className="relative">
                             <div
                                 className="absolute bottom-0 left-0 w-full p-10 text-white uppercase flex flex-col name-banner"
