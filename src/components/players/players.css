@@ -1,26 +1,37 @@
 .stats-card {
     background: radial-gradient(circle, rgba(201, 135, 154, 0.9) 0%, rgba(160, 57, 86, 0.9) 100%);
-    z-index: -1;
+    z-index: 1;
     opacity: 0;
+    visibility: hidden;
     padding: 40px;
-    width: 123.5%;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    /* width: 123.5%; */
+    width: 100%;
+    transition: transform 0.2s ease, opacity 0.2s ease, visibility 0.2s ease;
     transform-style: preserve-3d;
 }
 .card-left,
 .card-right {
-    max-height: 770px;
+    max-height: 700px;
 }
 
 .player {
     object-fit: contain;
 }
-.card-left:hover .stats-card,
-.card-right:hover .stats-card {
+.card-left:hover .stats-card {
     z-index: 1;
+    visibility: visible;
     opacity: 1;
     transform: translateX(80%);
     transform-style: preserve-3d;
+    width: 123.5%;
+}
+.card-right:hover .stats-card {
+    transform: translateX(-100%);
+    transform-style: preserve-3d;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    width: 123.5%;
 }
 .player,
 .name-banner {
@@ -37,13 +48,6 @@
 .card-right:hover .name-banner {
     /* z-index: -1; */
     opacity: 0;
-}
-
-.card-right:hover .stats-card {
-    transform: translateX(-100%);
-    transform-style: preserve-3d;
-    z-index: 1;
-    opacity: 1;
 }
 
 .stats-card.argentina {
@@ -68,11 +72,43 @@
 }
 
 @media screen and (max-width: 1536px) {
-    .card-left,
-    .card-right {
-        max-height: 620px;
-    }
     .stats-card {
         padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .card-left:hover .stats-card {
+        opacity: 1;
+        transform: translateX(0%);
+        width: 100%;
+    }
+    .card-right:hover .stats-card {
+        transform: translateX(0%);
+        transform-style: preserve-3d;
+        opacity: 1;
+        width: 100%;
+    }
+    .stats-card {
+        transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+    }
+    /* .card-left:hover,
+    .card-right:hover {
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    } */
+    .card-left:hover .player,
+    .card-right:hover .player {
+        z-index: 1;
+        transform: translateY(0);
+    }
+    .card-left:hover .name-banner,
+    .card-right:hover .name-banner {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .progress-container {
+        display: none;
     }
 }

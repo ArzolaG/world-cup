@@ -39,7 +39,7 @@
 .argentina .circle-3 {
     fill: none;
     /* stroke: #4ab5e4; */
-    stroke: url(#GradientColor);
+    stroke: url(#GradientColor_argentina);
     stroke-width: 16px;
     color: #ff4e4e;
 }
@@ -49,7 +49,7 @@
 .portugal .circle-3 {
     fill: none;
     /* stroke: #4ab5e4; */
-    stroke: url(#GradientColorPortugal);
+    stroke: url(#GradientColor_portugal);
     stroke-width: 16px;
 }
 .brazil .circle-1,
@@ -57,7 +57,7 @@
 .brazil .circle-3 {
     fill: none;
     /* stroke: #4ab5e4; */
-    stroke: url(#GradientColorBrazil);
+    stroke: url(#GradientColor_brazil);
     stroke-width: 16px;
 }
 .france .circle-1,
@@ -65,21 +65,60 @@
 .france .circle-3 {
     fill: none;
     /* stroke: #4ab5e4; */
-    stroke: url(#GradientColorFrance);
+    stroke: url(#GradientColor_france);
     stroke-width: 16px;
 }
 
-.circle-1 {
+.argentina .circle-1 {
     stroke-dasharray: 472;
-    stroke-dashoffset: 150;
+    stroke-dashoffset: 120.24;
 }
-.circle-2 {
+.argentina .circle-2 {
     stroke-dasharray: 472;
-    stroke-dashoffset: 100;
+    stroke-dashoffset: 176.88;
 }
-.circle-3 {
+.argentina .circle-3 {
     stroke-dasharray: 472;
-    stroke-dashoffset: 350;
+    stroke-dashoffset: 430.64;
+}
+
+.portugal .circle-1 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 120.24;
+}
+.portugal .circle-2 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 276.88;
+}
+.portugal .circle-3 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 400.64;
+}
+
+.brazil .circle-1 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 150.24;
+}
+.brazil .circle-2 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 236.88;
+}
+.brazil .circle-3 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 440.64;
+}
+
+.france .circle-1 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 120.24;
+}
+.france .circle-2 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 216.88;
+}
+.france .circle-3 {
+    stroke-dasharray: 472;
+    stroke-dashoffset: 412.64;
 }
 
 .circle svg {
