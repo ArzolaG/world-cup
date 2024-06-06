@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Lionel Messi",
+        "number": 10,
+        "country": "argentina",
+        "club": "psg",
+        "image": "messi.png",
+        "international_debut": "August 17, 2005",
+        "birthdate": "June 24, 1987",
+        "height": 1.7,
+        "trophies": ["finalissima", "copa-america", "sub20"],
+        "stats": {
+            "pass": 83.84,
+            "dribble": 71.4,
+            "conversion": 13.16,
+            "games": 180,
+            "goals": 106,
+            "assists": 55,
+            "ratio": 0.894
+        }
+    },
+    {
+        "name": "Cristiano Ronaldo",
+        "number": 7,
+        "country": "portugal",
+        "club": "manchester",
+        "image": "cristiano.png",
+        "international_debut": "August 20, 2003",
+        "birthdate": "February 5, 1985",
+        "height": 1.87,
+        "trophies": ["nations-league", "euro"],
+        "stats": {
+            "pass": 82,
+            "dribble": 45,
+            "conversion": 20,
+            "games": 206,
+            "goals": 128,
+            "assists": 43,
+            "ratio": 0.83
+        }
+    },
+    {
+        "name": "Da'Silva Neymar",
+        "number": 10,
+        "country": "brazil",
+        "club": "psg",
+        "image": "neymar.png",
+        "international_debut": "August 10, 2010",
+        "birthdate": "February 5, 1992",
+        "height": 1.75,
+        "trophies": ["olympic", "confederaciones"],
+        "stats": {
+            "pass": 80.18,
+            "dribble": 53.3,
+            "conversion": 11.76,
+            "games": 125,
+            "goals": 79,
+            "assists": 56,
+            "ratio": 1.08
+        }
+    },
+    {
+        "name": "Kylian Mbappé",
+        "number": 10,
+        "country": "france",
+        "club": "psg",
+        "image": "mbappe.png",
+        "international_debut": "March 25, 2017",
+        "birthdate": "December 20, 1998",
+        "height": 1.78,
+        "trophies": ["worldcup", "euro"],
+        "stats": {
+            "pass": 84.42,
+            "dribble": 64,
+            "conversion": 15.69,
+            "games": 77,
+            "goals": 46,
+            "assists": 25,
+            "ratio": 0.92
+        }
+    }
+]
