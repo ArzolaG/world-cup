@@ -112,3 +112,12 @@
         display: none;
     }
 }
+@media screen and (max-width: 450px) {
+    body .sidebar {
+        display: none;
+    }
+    .card-left,
+    .card-right {
+        max-height: 560px;
+    }
+}

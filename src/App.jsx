@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Footer, Info, Features, PlayerUpdated, Stripe } from "./components/index.js";
+import { Header, Footer, Info, Features, Players, Stripe } from "./components/index.js";
 
 const App = () => {
     return (
@@ -8,7 +8,7 @@ const App = () => {
             <Stripe />
             <Info />
             <Features />
-            <PlayerUpdated />
+            <Players />
             <Footer />
         </div>
     );

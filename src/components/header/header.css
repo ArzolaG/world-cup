@@ -1,4 +1,103 @@
 .header-container {
     background-image: url("/src/assets/world-cup.jpg");
     background-size: cover;
+    background-position: center center;
+}
+.navigation ul li a {
+    transition: 0.3s all ease;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+}
+.navigation ul li a:hover {
+    text-decoration-color: #fff;
+}
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.navigation {
+    width: 70%;
+}
+
+.mobile-menu {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: rgba(138, 21, 56, 1);
+    z-index: 99;
+    padding: 50px;
+    padding-top: 30%;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s visibility ease, 0.3s opacity ease;
+}
+.mobile-menu.inactive {
+    visibility: hidden;
+    opacity: 0;
+}
+.mobile-menu.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mobile-menu li a {
+    font-size: 20px;
+}
+.mobile-menu li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.mobile-menu .hamburger-closed {
+    right: 45px;
+    top: 40px;
+}
+
+.hamburger-closed div:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 29px;
+    height: 4px;
+}
+.hamburger-closed div:nth-child(2) {
+    transform-origin: center;
+    width: 0;
+}
+.hamburger-closed div:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    width: 29px;
+    height: 4px;
+}
+
+@media screen and (max-width: 1750px) {
+    body .navigation {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 640px) {
+}
+@media screen and (max-width: 550px) {
+    body .navigation {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body .navigation {
+        width: 60%;
+    }
 }

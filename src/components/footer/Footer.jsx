@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <div className="flex flex-col bg-qatar">
-            <div className="flex  text-white justify-between w-full py-20 max-w-screen-xl mx-auto">
+        <div className="flex flex-col bg-qatar" id="footer">
+            <div className="flex flex-wrap text-white justify-between w-full py-20 gap-16 px-5 max-w-screen-xl mx-auto">
                 <div className="max-w-96 flex flex-col gap-6 items-start">
                     <h2 className="text-5xl">Qatar</h2>
                     <p>
@@ -13,7 +13,7 @@ const Footer = () => {
                     </p>
                     <img src="/src/assets/logo-worldcup.png" alt="Logo" />
                 </div>
-                <div className="flex gap-32">
+                <div className="flex flex-wrap gap-16 sm:gap-32">
                     <div>
                         <h4 className="text-2xl uppercase mb-8">Quick Links</h4>
                         <ul className="font-poppins flex flex-col gap-5">
@@ -33,28 +33,31 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li>
-                                <a className="hover:underline" href="#gallery">
-                                    Gallery
+                                <a className="hover:underline" href="#features">
+                                    Features
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <h4 className="text-2xl uppercase mb-8">Contact</h4>
-                        <ul className="font-poppins mb-8">
+                        <ul className="font-poppins mb-8 flex flex-col gap-5 ">
                             <li>
-                                <a href="#header">contact@qatarworldcup.com</a>
+                                <a className="hover:underline" href="mailto:test@test.com">
+                                    contact@qatarworldcup.com
+                                </a>
                             </li>
                             <li>
-                                <a href="#info">(999) 999-9999</a>
+                                <a className="hover:underline" href="tel:999-999-9999">
+                                    (999) 999-9999
+                                </a>
                             </li>
                         </ul>
-                        <div>icons</div>
                     </div>
                 </div>
             </div>
             <div style={{ backgroundImage: "url(/src/assets/footer-bg.png)", backgroundSize: "cover" }} className="text-white py-3 ">
-                <div className="flex justify-between max-w-screen-xl mx-auto">
+                <div className="flex flex-col justify-center items-center px-5 sm:flex-row sm:justify-between max-w-screen-xl mx-auto">
                     <span>World Cup</span>
                     <span>Copyright © 2024 – All Right Reserved</span>
                 </div>
