@@ -11,7 +11,7 @@ const Footer = () => {
                         gained global prominence by hosting the 2022 FIFA World Cup, highlighting its advanced infrastructure and
                         hospitality to the world.
                     </p>
-                    <img src="/src/assets/logo-worldcup.png" alt="Logo" />
+                    <img src="/logo-worldcup.png" alt="Logo" />
                 </div>
                 <div className="flex flex-wrap gap-16 sm:gap-32">
                     <div>
@@ -56,7 +56,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div style={{ backgroundImage: "url(/src/assets/footer-bg.png)", backgroundSize: "cover" }} className="text-white py-3 ">
+            <div style={{ backgroundImage: "url(/footer-bg.png)", backgroundSize: "cover" }} className="text-white py-3 ">
                 <div className="flex flex-col justify-center items-center px-5 sm:flex-row sm:justify-between max-w-screen-xl mx-auto">
                     <span>World Cup</span>
                     <span>Copyright © 2024 – All Right Reserved</span>

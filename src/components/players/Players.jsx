@@ -54,24 +54,20 @@ const Players = () => {
                     >
                         <div
                             className="flex flex-col justify-between px-4 py-6 sidebar"
-                            style={{ backgroundImage: "url(/src/assets/sidebar-bg.jpg)", backgroundSize: "cover" }}
+                            style={{ backgroundImage: "url(/sidebar-bg.jpg)", backgroundSize: "cover" }}
                         >
                             <div className="flex flex-col gap-5">
-                                <img
-                                    className="border border-white rounded-lg"
-                                    src={`/src/assets/${player.country}.png`}
-                                    alt={player.country}
-                                />
-                                <img src={`/src/assets/${player.club}.png`} alt={player.club} />
+                                <img className="border border-white rounded-lg" src={`/${player.country}.png`} alt={player.country} />
+                                <img src={`/${player.club}.png`} alt={player.club} />
                             </div>
                             <div>
-                                <img src="/src/assets/logo-worldcup.png" alt="World Cup Logo" />
+                                <img src="/logo-worldcup.png" alt="World Cup Logo" />
                             </div>
                         </div>
-                        <div className="w-full" style={{ backgroundImage: "url(/src/assets/qatar-bg.jpg)", backgroundSize: "cover" }}>
+                        <div className="w-full" style={{ backgroundImage: "url(/qatar-bg.jpg)", backgroundSize: "cover" }}>
                             <img
                                 className="pt-8 drop-shadow-2xl w-full h-full object-contain player"
-                                src={`/src/assets/${player.image}`}
+                                src={`/${player.image}`}
                                 alt={player.name}
                             />
                             <div className="relative">
@@ -127,7 +123,7 @@ const Players = () => {
                                                 <img
                                                     key={index}
                                                     className="sm:w-11 sm:h-28 w-8 h-20 object-contain"
-                                                    src={`/src/assets/${trophy}.png`}
+                                                    src={`/${trophy}.png`}
                                                     alt="Cup"
                                                 />
                                             ))}

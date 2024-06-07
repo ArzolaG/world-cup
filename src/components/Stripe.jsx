@@ -3,7 +3,7 @@ import React from "react";
 const Stripe = () => {
     return (
         <div>
-            <img className=" w-full" src="/src/assets/stripe.jpg" alt="Stripe" />
+            <img className=" w-full" src="/stripe.jpg" alt="Stripe" />
         </div>
     );
 };

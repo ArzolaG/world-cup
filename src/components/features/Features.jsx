@@ -6,11 +6,11 @@ import BottomRightLine from "./BottomRightLine";
 
 const Features = () => {
     return (
-        <div style={{ backgroundImage: `url(/src/assets/qatar-bg.jpg)` }} className="w-full" id="features">
+        <div style={{ backgroundImage: `url(/qatar-bg.jpg)` }} className="w-full" id="features">
             <div className="w-full flex flex-col items-center justify-center overflow-hidden pt-36 pb-20 sm:py-52">
                 <div className="ball-container">
                     <h2 className="text-qatar text-5xl text-center relative bottom-20">World Cup Ball</h2>
-                    <img className="ball" src="/src/assets/ball.png" alt="Soccer Ball" />
+                    <img className="ball" src="/ball.png" alt="Soccer Ball" />
                     <div className="blurb b-1">
                         <h3 className="text-qatar text-4xl">Speedshell Tech</h3>
                         <p>

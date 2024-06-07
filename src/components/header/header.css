@@ -1,5 +1,5 @@
 .header-container {
-    background-image: url("/src/assets/world-cup.jpg");
+    background-image: url("/world-cup.jpg");
     background-size: cover;
     background-position: center center;
 }

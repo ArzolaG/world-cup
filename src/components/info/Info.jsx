@@ -8,7 +8,7 @@ const Info = () => {
             id="info"
         >
             <div className="w-full flex-1 basis-1/4">
-                <img className="w-full max-w-2xl min-w-80 shadow-2xl rounded-lg" src="/src/assets/stadium.jpg" alt="Stadium" />
+                <img className="w-full max-w-2xl min-w-80 shadow-2xl rounded-lg" src="/stadium.jpg" alt="Stadium" />
             </div>
             <div className="w-full flex-1 flex flex-col gap-10 items-start flex-nowrap basis-2/4">
                 <h2 className="text-5xl text-qatar">Qatar</h2>
