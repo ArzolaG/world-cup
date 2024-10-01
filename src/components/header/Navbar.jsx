@@ -41,13 +41,13 @@ const Navbar = () => {
                     </ul>
                 </nav>
             </div>
-            <nav className={`mobile-menu absolute text-white ${toggleMenu ? "active" : "inactive"}`}>
+            <nav className={`mobile-menu text-white ${toggleMenu ? "active" : "inactive"}`}>
                 <div className="hamburger-closed hamburger" onClick={handleClick}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <ul className=" gap-10 flex-col flex sm:flex-row">
+                <ul className=" gap-14 flex-col flex sm:flex-row">
                     <li>
                         <a
                             href="#header"
